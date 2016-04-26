@@ -1,7 +1,7 @@
 stage "DEV-QA"
 
 node {
-git 'https://github.com/jasonmontgomery/se441-qotd-pipeline.git'
+git 'https://github.com/jasonmontgomery/se441-qotd.git'
 
 def gradleHome = tool 'Gradle 2.11'
 bat "${gradleHome}\\bin\\gradle.bat assemble uploadArchives"
